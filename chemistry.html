@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>Chemistry</title>
+
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <link
+      id="favicon"
+      rel="icon"
+      type="image/svg+xml"
+      href="images/favicons/chemistry.svg"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>⚗️ Chemistry</h1>
+
+      <p>Select a quiz topic:</p>
+
+      <div class="subject-grid">
+        <div class="subject-card">
+          <div class="subject-icon">⚛️</div>
+
+          <h3>Atomic Structure</h3>
+
+          <p>Protons, neutrons, electrons and models</p>
+
+          <button
+            class="btn btn-small"
+            onclick="startQuiz('chemistry', 'atomic-structure')"
+          >
+            Start Quiz
+          </button>
+        </div>
+
+        <div class="subject-card">
+          <div class="subject-icon">🧪</div>
+
+          <h3>Periodic Table</h3>
+
+          <p>Groups, periods, and properties</p>
+
+          <button
+            class="btn btn-small"
+            onclick="startQuiz('chemistry', 'periodic-table')"
+          >
+            Start Quiz
+          </button>
+        </div>
+
+        <div class="subject-card">
+          <div class="subject-icon">🔥</div>
+
+          <h3>Chemical Reactions</h3>
+
+          <p>Types of reactions and balancing</p>
+
+          <button
+            class="btn btn-small"
+            onclick="startQuiz('chemistry', 'reactions')"
+          >
+            Start Quiz
+          </button>
+        </div>
+      </div>
+
+      <button class="btn btn-small" onclick="location.href = 'index.html'">
+        Back to Subjects
+      </button>
+    </div>
+
+    <script>
+      function startQuiz(subject, quiz) {
+        window.location.href = `quiz.html?subject=${subject}&quiz=${quiz}`;
+      }
+    </script>
+  </body>
+</html>

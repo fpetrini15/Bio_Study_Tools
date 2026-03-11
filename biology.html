@@ -1,0 +1,73 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Biology | STEM Study Buddy</title>
+    <link rel="icon" href="images/favicons/dna.svg" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="hero">
+        <h1>Biology</h1>
+
+        <p>Select a quiz to begin studying.</p>
+      </header>
+
+      <h2>Available Quizzes</h2>
+
+      <div class="subject-grid">
+        <!-- MITOSIS -->
+
+        <div class="subject-card">
+          <div class="subject-icon">🧫</div>
+
+          <h3>Mitosis</h3>
+
+          <p>Test your knowledge of cell division.</p>
+
+          <a href="quiz.html?quiz=biology/mitosis">
+            <button class="btn btn-full">Start Quiz</button>
+          </a>
+        </div>
+
+        <div class="subject-card">
+          <div class="subject-icon">♀️♂️</div>
+
+          <h3>Meiosis</h3>
+
+          <p>Test your knowledge of gamete production.</p>
+
+          <a href="quiz.html?quiz=biology/meiosis">
+            <button class="btn btn-full">Start Quiz</button>
+          </a>
+        </div>
+
+        <!-- FUTURE QUIZ -->
+
+        <div class="subject-card">
+          <div class="subject-icon">🧪</div>
+
+          <h3>More Biology</h3>
+
+          <p>Additional quizzes coming soon.</p>
+
+          <button class="btn btn-full btn-disabled">Coming Soon</button>
+        </div>
+      </div>
+
+      <button class="btn btn-small" onclick="location.href = 'index.html'">
+        ← Back to Subjects
+      </button>
+
+      <footer>
+        <p>STEM Study Buddy © 2026</p>
+      </footer>
+    </div>
+  </body>
+</html>
