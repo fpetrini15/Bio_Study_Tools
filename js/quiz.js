@@ -1,6 +1,6 @@
-const params = new URLSearchParams(window.location.search);
+const PARAMS = new URLSearchParams(window.location.search);
 
-const quizName = params.get("quiz");
+const quizName = PARAMS.get("quiz");
 
 if (!quizName) {
   document.body.innerHTML = "<h1>No quiz specified</h1>";
@@ -8,25 +8,24 @@ if (!quizName) {
   throw new Error("Missing quiz parameter");
 }
 
-const subject = quizName.split("/")[0];
-
 const dataPath = "data/" + quizName + ".json";
 
 let quizData;
+let quizType;
 
 let current = 0;
-
 let questions = [];
 
 let correctCount = 0;
-
 let answeredCount = 0;
+
+/* ELEMENTS */
+
+const promptBox = document.getElementById("prompt");
 
 const draggable = document.getElementById("draggable");
 
-const staticInstruction = document.getElementById("static-instruction");
-
-const promptBox = document.getElementById("prompt");
+const interactionArea = document.getElementById("interaction-area");
 
 const categoriesContainer = document.getElementById("categories");
 
@@ -46,6 +45,12 @@ const finalScore = document.getElementById("final-score");
 
 const retryBtn = document.getElementById("retry-btn");
 
+const instructionText = document.getElementById("instruction-text");
+
+const loadingScreen = document.getElementById("loading-screen");
+
+/* UTILITY */
+
 function shuffle(array) {
   for (let i = array.length - 1; i > 0; i--) {
     let j = Math.floor(Math.random() * (i + 1));
@@ -56,10 +61,319 @@ function shuffle(array) {
   return array;
 }
 
-function loadFavicon() {
-  const params = new URLSearchParams(window.location.search);
+/* RESET */
 
-  const quizName = params.get("quiz");
+function resetQuestionUI() {
+  promptBox.innerHTML = "";
+
+  categoriesContainer.innerHTML = "";
+
+  feedback.textContent = "";
+
+  feedback.classList.remove("show");
+
+  continueBtn.style.display = "none";
+
+  draggable.classList.add("hidden");
+
+  draggable.innerHTML = "";
+
+  draggable.setAttribute("draggable", "false");
+
+  interactionArea.style.display = "flex";
+
+  categoriesContainer.style.display = "flex";
+}
+
+/* RENDER SYSTEM */
+
+const questionRenderers = {
+  drag_and_drop: renderDragQuestion,
+
+  multiple_choice: renderMultipleChoiceQuestion,
+};
+
+/* LOAD QUIZ */
+
+async function loadQuiz() {
+  const res = await fetch(dataPath);
+
+  quizData = await res.json();
+
+  quizType = quizData.type || "drag_and_drop";
+
+  questions = shuffle([...quizData.questions]);
+
+  console.log(quizData.title);
+
+  document.getElementById("tabTitle").textContent = quizData.title;
+  document.getElementById("quizHeader").textContent = quizData.title;
+
+  loadQuestion();
+  setTimeout(() => {
+    loadingScreen.classList.add("hidden");
+  }, 300);
+}
+
+/* LOAD QUESTION */
+
+function loadQuestion() {
+  if (current >= questions.length) {
+    endQuiz();
+
+    return;
+  }
+
+  resetQuestionUI();
+
+  updateProgress();
+
+  const question = questions[current];
+
+  const renderer = questionRenderers[quizType];
+
+  renderer(question);
+}
+
+/* DRAG RENDER */
+
+function renderDragQuestion(question) {
+  createCategories();
+
+  instructionText.textContent =
+    "Drag the prompts/images into the appropriate category.";
+
+  draggable.setAttribute("draggable", "true");
+
+  /* embed prompt inside tile */
+
+  if (question.prompt.text) {
+    const text = document.createElement("div");
+
+    text.textContent = question.prompt.text;
+    text.className = "draggable-text";
+
+    draggable.appendChild(text);
+  }
+
+  if (question.prompt.image) {
+    const img = document.createElement("img");
+
+    img.src = question.prompt.image;
+
+    img.className = "quiz-image";
+
+    draggable.appendChild(img);
+  }
+  draggable.classList.remove("hidden");
+  draggable.classList.add("visible");
+}
+
+/* MC RENDER */
+
+function renderMultipleChoiceQuestion(question) {
+  draggable.classList.add("hidden");
+
+  /* prompt stays separate */
+
+  if (question.prompt.text) {
+    const text = document.createElement("div");
+
+    text.textContent = question.prompt.text;
+
+    promptBox.appendChild(text);
+  }
+
+  if (question.prompt.image) {
+    const img = document.createElement("img");
+
+    img.src = question.prompt.image;
+
+    img.className = "quiz-image";
+
+    promptBox.appendChild(img);
+  }
+
+  question.options.forEach((option) => {
+    const btn = document.createElement("button");
+
+    btn.className = "mc-option";
+
+    btn.textContent = option;
+
+    btn.addEventListener("click", () => {
+      checkMultipleChoiceAnswer(option);
+    });
+
+    categoriesContainer.appendChild(btn);
+  });
+}
+
+/* CATEGORIES */
+
+function createCategories() {
+  quizData.categories.forEach((cat) => {
+    const zone = document.createElement("div");
+
+    zone.className = "dropzone";
+
+    zone.textContent = cat;
+
+    zone.dataset.category = cat;
+
+    zone.addEventListener("dragover", (e) => {
+      e.preventDefault();
+
+      zone.classList.add("dragover");
+    });
+
+    zone.addEventListener("dragleave", () => {
+      zone.classList.remove("dragover");
+    });
+
+    zone.addEventListener("drop", (e) => {
+      e.preventDefault();
+
+      zone.classList.remove("dragover");
+
+      checkDragAnswer(cat);
+    });
+
+    categoriesContainer.appendChild(zone);
+  });
+}
+
+/* PROGRESS */
+
+function updateProgress() {
+  const percent = (current / questions.length) * 100;
+
+  progressBar.style.width = percent + "%";
+}
+
+/* DRAG CHECK */
+
+function checkDragAnswer(category) {
+  const correct = questions[current].answer;
+
+  answeredCount++;
+
+  document.querySelectorAll(".dropzone").forEach((zone) => {
+    zone.classList.remove("correct", "incorrect");
+  });
+
+  if (category === correct) {
+    correctCount++;
+
+    feedback.textContent = "Correct!";
+
+    document
+      .querySelector(`[data-category="${category}"]`)
+      .classList.add("correct");
+  } else {
+    feedback.textContent = "Wrong! Correct answer: " + correct;
+
+    document
+      .querySelector(`[data-category="${category}"]`)
+      .classList.add("incorrect");
+  }
+
+  scoreDisplay.textContent = correctCount;
+
+  totalDisplay.textContent = answeredCount;
+
+  feedback.classList.add("show");
+
+  continueBtn.style.display = "inline-block";
+
+  draggable.setAttribute("draggable", "false");
+}
+
+/* MC CHECK */
+
+function checkMultipleChoiceAnswer(option) {
+  const correct = questions[current].answer;
+
+  answeredCount++;
+
+  document.querySelectorAll(".mc-option").forEach((btn) => {
+    btn.disabled = true;
+
+    if (btn.textContent === correct) {
+      btn.classList.add("correct");
+    } else if (btn.textContent === option) {
+      btn.classList.add("incorrect");
+    }
+  });
+
+  if (option === correct) {
+    correctCount++;
+
+    feedback.textContent = "Correct!";
+  } else {
+    feedback.textContent = "Wrong! Correct answer: " + correct;
+  }
+
+  scoreDisplay.textContent = correctCount;
+
+  totalDisplay.textContent = answeredCount;
+
+  feedback.classList.add("show");
+
+  continueBtn.style.display = "inline-block";
+}
+
+/* CONTINUE */
+
+continueBtn.addEventListener("click", () => {
+  current++;
+
+  loadQuestion();
+});
+
+/* END */
+
+function endQuiz() {
+  interactionArea.style.display = "none";
+
+  categoriesContainer.style.display = "none";
+
+  continueBtn.style.display = "none";
+
+  finalScreen.style.display = "block";
+
+  finalScore.textContent =
+    "You got " + correctCount + " out of " + answeredCount + " correct.";
+
+  progressBar.style.width = "100%";
+}
+
+/* RETRY */
+
+retryBtn.addEventListener("click", () => {
+  current = 0;
+
+  correctCount = 0;
+
+  answeredCount = 0;
+
+  questions = shuffle([...quizData.questions]);
+
+  interactionArea.style.display = "flex";
+
+  categoriesContainer.style.display = "flex";
+
+  finalScreen.style.display = "none";
+
+  scoreDisplay.textContent = "0";
+
+  totalDisplay.textContent = "0";
+
+  loadQuestion();
+});
+
+function loadFavicon() {
+  const quizName = PARAMS.get("quiz");
 
   const subject = quizName.split("/")[0];
 
@@ -76,283 +390,13 @@ function loadFavicon() {
 
 function buildBackButtons() {
   //document.getElementById("subjectBack").href = subject + ".html";
+  const quizName = PARAMS.get("quiz");
 
+  const subject = quizName.split("/")[0];
   document.getElementById("mainBack").href = subject + ".html";
 }
 
-async function loadQuiz() {
-  const res = await fetch(dataPath);
-
-  quizData = await res.json();
-
-  questions = shuffle([...quizData.questions]);
-
-  document.getElementById("quizHeader").textContent = quizData.title;
-
-  document.getElementById("quizTitle").textContent = quizData.title;
-
-  createCategories();
-
-  loadQuestion();
-}
-
-function createCategories() {
-  quizData.categories.forEach((cat) => {
-    const zone = document.createElement("div");
-
-    zone.className = "dropzone";
-
-    zone.textContent = cat;
-
-    zone.dataset.category = cat;
-
-    /* DRAG OVER */
-
-    zone.addEventListener("dragover", (e) => {
-      e.preventDefault();
-
-      zone.classList.add("dragover");
-    });
-
-    /* DRAG ENTER (important for some browsers) */
-
-    zone.addEventListener("dragenter", (e) => {
-      e.preventDefault();
-
-      zone.classList.add("dragover");
-    });
-
-    /* DRAG LEAVE */
-
-    zone.addEventListener("dragleave", () => {
-      zone.classList.remove("dragover");
-    });
-
-    /* DROP */
-
-    zone.addEventListener("drop", (e) => {
-      e.preventDefault();
-
-      zone.classList.remove("dragover");
-
-      checkAnswer(cat);
-    });
-
-    categoriesContainer.appendChild(zone);
-  });
-}
-
-draggable.addEventListener("dragstart", () => {
-  draggable.classList.add("dragging");
-});
-
-draggable.addEventListener("dragend", () => {
-  draggable.classList.remove("dragging");
-});
-
-draggable.addEventListener("touchstart", () => {
-  draggable.classList.add("dragging");
-});
-
-document.addEventListener("touchend", (e) => {
-  if (!draggable.classList.contains("dragging")) return;
-
-  const touch = e.changedTouches[0];
-
-  const element = document.elementFromPoint(
-    touch.clientX,
-
-    touch.clientY,
-  );
-
-  if (element && element.classList.contains("dropzone")) {
-    checkAnswer(element.dataset.category);
-  }
-
-  draggable.classList.remove("dragging");
-});
-
-function loadQuestion() {
-  if (current >= questions.length) {
-    endQuiz();
-
-    return;
-  }
-
-  updateProgress();
-
-  const question = questions[current];
-
-  const prompt = question.prompt;
-
-  promptBox.innerHTML = "";
-
-  if (prompt.text) {
-    const text = document.createElement("div");
-
-    text.textContent = prompt.text;
-
-    promptBox.appendChild(text);
-  }
-
-  if (prompt.image) {
-    const instruction = document.createElement("div");
-
-    instruction.textContent =
-      prompt.instruction || "Identify the mitosis stage";
-
-    instruction.className = "image-instruction";
-
-    promptBox.appendChild(instruction);
-
-    const img = document.createElement("img");
-    console.log(prompt.image);
-
-    img.src = prompt.image;
-
-    img.className = "quiz-image";
-
-    img.onerror = () => {
-      img.onerror = null;
-
-      img.src = "images/errors/fallback.svg";
-
-      if (img.src.includes("fallback.svg")) {
-        img.style.display = "none";
-      }
-    };
-
-    promptBox.appendChild(img);
-  }
-
-  if (prompt.audio) {
-    const audio = document.createElement("audio");
-
-    audio.src = prompt.audio;
-
-    audio.controls = true;
-
-    promptBox.appendChild(audio);
-  }
-
-  draggable.setAttribute("draggable", "true");
-}
-
-function updateProgress() {
-  const percent = (current / questions.length) * 100;
-
-  progressBar.style.width = percent + "%";
-}
-
-function checkAnswer(category) {
-  const correct = questions[current].answer;
-
-  document
-
-    .querySelectorAll(".dropzone")
-
-    .forEach((z) => z.classList.remove("correct", "incorrect"));
-
-  feedback.classList.remove("show");
-
-  answeredCount++;
-
-  if (category === correct) {
-    correctCount++;
-
-    feedback.textContent = "Correct!";
-
-    document
-
-      .querySelector(`[data-category="${category}"]`)
-
-      .classList.add("correct");
-  } else {
-    feedback.textContent = "Wrong! Correct answer: " + correct;
-
-    document
-
-      .querySelector(`[data-category="${category}"]`)
-
-      .classList.add("incorrect");
-  }
-
-  scoreDisplay.textContent = correctCount;
-
-  totalDisplay.textContent = answeredCount;
-
-  feedback.classList.add("show");
-
-  continueBtn.style.display = "inline-block";
-
-  draggable.setAttribute("draggable", "false");
-}
-
-continueBtn.addEventListener("click", () => {
-  current++;
-
-  loadQuestion();
-
-  feedback.textContent = "";
-
-  feedback.classList.remove("show");
-
-  continueBtn.style.display = "none";
-
-  document
-
-    .querySelectorAll(".dropzone")
-
-    .forEach((z) => z.classList.remove("correct", "incorrect"));
-});
-
-function endQuiz() {
-  draggable.style.display = "none";
-
-  categoriesContainer.style.display = "none";
-
-  feedback.style.display = "none";
-
-  continueBtn.style.display = "none";
-
-  staticInstruction.style.display = "none";
-
-  finalScreen.style.display = "block";
-
-  finalScore.textContent =
-    "You got " + correctCount + " out of " + answeredCount + " correct!";
-
-  progressBar.style.width = "100%";
-}
-
-retryBtn.addEventListener("click", () => {
-  current = 0;
-
-  correctCount = 0;
-
-  answeredCount = 0;
-
-  finalScreen.style.display = "none";
-
-  draggable.style.display = "flex";
-
-  categoriesContainer.style.display = "flex";
-
-  staticInstruction.style.display = "block";
-
-  feedback.style.display = "block";
-
-  scoreDisplay.textContent = "0";
-
-  totalDisplay.textContent = "0";
-
-  questions = shuffle([...quizData.questions]);
-
-  loadQuestion();
-});
-
+/* START */
 loadFavicon();
-
 buildBackButtons();
-
 loadQuiz();

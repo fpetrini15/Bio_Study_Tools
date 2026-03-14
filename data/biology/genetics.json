@@ -1,0 +1,16 @@
+{
+  "title":"Genetics Quiz",
+  "type":"multiple_choice",
+  "questions":[
+    {
+      "prompt":{"text":"What particle has a negative charge?"},
+      "options":[
+        "Proton",
+        "Neutron",
+        "Electron",
+        "Nucleus"
+      ],
+      "answer":"Electron"
+    }
+  ]
+}
