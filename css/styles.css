@@ -273,6 +273,39 @@ justify-content:center;
 
 margin-bottom:20px;
 
+align-items:center;
+
+justify-content:center;
+
+background:
+linear-gradient(
+135deg,
+var(--primary),
+var(--primary-light)
+);
+
+color:white;
+
+padding:24px;
+
+border-radius:var(--radius-lg);
+
+cursor:grab;
+
+min-height:100px;
+
+max-width:600px;
+
+width:100%;
+
+margin:0;
+
+box-shadow:var(--shadow-btn);
+
+transition:.2s;
+
+gap:10px;
+
 }
 
 #prompt{

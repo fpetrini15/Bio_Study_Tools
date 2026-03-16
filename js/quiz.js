@@ -15,6 +15,7 @@ let quizType;
 
 let current = 0;
 let questions = [];
+let answers = [];
 
 let correctCount = 0;
 let answeredCount = 0;
@@ -22,6 +23,8 @@ let answeredCount = 0;
 /* ELEMENTS */
 
 const promptBox = document.getElementById("prompt");
+
+const promptContainer = document.getElementById("prompt-container");
 
 const draggable = document.getElementById("draggable");
 
@@ -102,9 +105,16 @@ async function loadQuiz() {
 
   quizType = quizData.type || "drag_and_drop";
 
-  questions = shuffle([...quizData.questions]);
-
-  console.log(quizData.title);
+  if (quizType == "multiple_choice") {
+    questions = shuffle(
+      quizData.questions.map((q) => ({
+        ...q,
+        options: shuffle([...q.options]),
+      })),
+    );
+  } else {
+    questions = shuffle([...quizData.questions]);
+  }
 
   document.getElementById("tabTitle").textContent = quizData.title;
   document.getElementById("quizHeader").textContent = quizData.title;
@@ -112,7 +122,7 @@ async function loadQuiz() {
   loadQuestion();
   setTimeout(() => {
     loadingScreen.classList.add("hidden");
-  }, 300);
+  }, 150);
 }
 
 /* LOAD QUESTION */
@@ -144,6 +154,7 @@ function renderDragQuestion(question) {
     "Drag the prompts/images into the appropriate category.";
 
   draggable.setAttribute("draggable", "true");
+  promptContainer.style.display = "none";
 
   /* embed prompt inside tile */
 
@@ -173,6 +184,9 @@ function renderDragQuestion(question) {
 
 function renderMultipleChoiceQuestion(question) {
   draggable.classList.add("hidden");
+
+  instructionText.textContent =
+    "Select the correct answer from the options below.";
 
   /* prompt stays separate */
 
@@ -357,7 +371,18 @@ retryBtn.addEventListener("click", () => {
 
   answeredCount = 0;
 
-  questions = shuffle([...quizData.questions]);
+  quizType = quizData.type || "drag_and_drop";
+
+  if (quizType == "multiple_choice") {
+    questions = shuffle(
+      quizData.questions.map((q) => ({
+        ...q,
+        options: shuffle([...q.options]),
+      })),
+    );
+  } else {
+    questions = shuffle([...quizData.questions]);
+  }
 
   interactionArea.style.display = "flex";
 
@@ -389,9 +414,7 @@ function loadFavicon() {
 }
 
 function buildBackButtons() {
-  //document.getElementById("subjectBack").href = subject + ".html";
   const quizName = PARAMS.get("quiz");
-
   const subject = quizName.split("/")[0];
   document.getElementById("mainBack").href = subject + ".html";
 }

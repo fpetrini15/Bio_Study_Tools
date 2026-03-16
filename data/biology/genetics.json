@@ -3,14 +3,198 @@
   "type":"multiple_choice",
   "questions":[
     {
-      "prompt":{"text":"What particle has a negative charge?"},
+      "prompt":{"text":"A specific, heritable feature that varies among individuals is known as a __."},
       "options":[
-        "Proton",
-        "Neutron",
-        "Electron",
-        "Nucleus"
+        "Character",
+        "Allele",
+        "Genotype",
+        "Zygote"
       ],
-      "answer":"Electron"
+      "answer":"Character"
+    },
+    {
+      "prompt":{"text":"Each variant for a character is know as a __."},
+      "options":[
+        "Characteristic",
+        "Trait",
+        "Gene",
+        "Combination"
+      ],
+      "answer":"Trait"
+    },
+    {
+      "prompt":{"text":"Alternate versions of genes account for variations in inherited character. These alternate versions are called __."},
+      "options":[
+        "Characteristics",
+        "Hybrids",
+        "True breeds",
+        "Alleles"
+      ],
+      "answer":"Alleles"
+    },
+    {
+      "prompt":{"text":"An organism with a pair of identical alleles (e.g., AA) is said to be __."},
+      "options":[
+        "Homozygous",
+        "Heterozygous",
+        "Dominant",
+        "Recessive"
+      ],
+      "answer":"Homozygous"
+    },
+    {
+      "prompt":{"text":"An organism with a pair of different alleles (e.g., Aa) is said to be __."},
+      "options":[
+        "Homozygous",
+        "Heterozygous",
+        "Dominant",
+        "Recessive"
+      ],
+      "answer":"Heterozygous"
+    },
+    {
+      "prompt":{"text":"A collection of an organism's observable traits is its __."},
+      "options":[
+        "Character",
+        "Genome",
+        "Phenotype",
+        "Genotype"
+      ],
+      "answer":"Phenotype"
+    },
+    {
+      "prompt":{"text":"The genetic makeup responsible for an organism's observable characteristics is known as a __."},
+      "options":[
+        "Character",
+        "Trait",
+        "Phenotype",
+        "Genotype"
+      ],
+      "answer":"Genotype"
+    },
+    {
+      "prompt":{"text":"If we observe a purple flower, we could say that \"purple\" describes the flower's __ and \"PP\" its __."},
+      "options":[
+        "Genotype, phenotype",
+        "Genome, phenotype",
+        "Trait, genome",
+        "Phenotype, genotype"
+      ],
+      "answer":"Phenotype, genotype"
+    },
+    {
+      "prompt":{"text":"A breeding strategy where a known homozygous recessive parent is crossed with a dominant-displaying parent to reveal the latter's genotype is know as a __."},
+      "options":[
+        "Single blind cross",
+        "Distillation",
+        "Test cross",
+        "Allele extraction"
+      ],
+      "answer":"Test cross"
+    },
+    {
+      "prompt":{"text":"One caveat of the law of independent assortment is that it only applies to genes that are __."},
+      "options":[
+        "On different chromosomes or are very far away",
+        "On the same chromosome or are very far away",
+        "On different chromosomes or are very close together",
+        "On the same chromosome or are very close together"
+      ],
+      "answer":"On different chromosomes or are very far away"
+    },
+    {
+      "prompt":{"text":"T/F: Dominant alleles are more common than recessive alleles."},
+      "options":[
+        "True",
+        "False"
+      ],
+      "answer":"False"
+    },
+    {
+      "prompt":{"text":"T/F: Recessive alleles are more common than dominant alleles."},
+      "options":[
+        "True",
+        "False"
+      ],
+      "answer":"False"
+    },
+    {
+      "prompt":{"text":"A pink snapdragon and crossed with a white snapdragon, producing a pink snapdragon is an example of __."},
+      "options":[
+        "Incomplete dominance",
+        "Codominance",
+        "Epistasis",
+        "Pleiotropy"
+      ],
+      "answer":"Incomplete dominance"
+    },
+    {
+      "prompt":{"text":"In human blood, alleles can each affect the phenotype in a separate, distinguishable way. This is an example of __."},
+      "options":[
+        "Incomplete dominance",
+        "Codominance",
+        "Epistasis",
+        "Pleiotropy"
+      ],
+      "answer":"Codominance"
+    },
+    {
+      "prompt":{"text":"Most genes have a multitude of phenotypic effects--a phenomena known as __."},
+      "options":[
+        "Incomplete dominance",
+        "Codominance",
+        "Epistasis",
+        "Pleiotropy"
+      ],
+      "answer":"Pleiotropy"
+    },
+    {
+      "prompt":{"text":"The phenotypic expression of one gene at one locus can alter that of gene at a second locus--a phenomena known as __."},
+      "options":[
+        "Incomplete dominance",
+        "Codominance",
+        "Epistasis",
+        "Pleiotropy"
+      ],
+      "answer":"Epistasis"
+    },
+    {
+      "prompt":{"text":"Which of the following is not an example of a quantitative phenotype?"},
+      "options":[
+        "Skin color",
+        "Freckles",
+        "Height",
+        "Hair texture"
+      ],
+      "answer":"Freckles"
+    },
+    {
+      "prompt":{"text":"Quantitative variation usually indicates __ inheritance."},
+      "options":[
+        "Complex",
+        "Epigenetic",
+        "Polygenic",
+        "Binary"
+      ],
+      "answer":"Polygenic"
+    },
+    {
+      "prompt":{"text":"T/F: Character phenotypes can also depend on the organism's environment"},
+      "options":[
+        "True",
+        "False"
+      ],
+      "answer":"True"
+    },
+    {
+      "prompt":{"text":"If a homozygous dominant male (AA) crosses with a homozygous recessive female (aa), what percent chance is there that the offspring will be dominant-displaying?"},
+      "options":[
+        "0",
+        "25",
+        "50",
+        "75"
+      ],
+      "answer":"0"
     }
   ]
 }
