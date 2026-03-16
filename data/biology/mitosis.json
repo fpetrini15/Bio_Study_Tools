@@ -1,6 +1,6 @@
 {
   "title":"Mitosis Quiz",
-
+  "type":"drag_and_drop",
   "categories": [
     "G1 Phase",
     "Prophase",
