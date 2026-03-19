@@ -1,0 +1,157 @@
+{
+  "title": "Acids and Bases Quiz",
+  "questions": [
+    {
+      "type": "drag_and_drop",
+      "prompt": {
+        "text": "HCl"
+      },
+      "categories": ["Strong Acid", "Weak Acid", "Weak Base", "Strong Base"],
+      "answer": "Strong Acid"
+    },
+    {
+      "type": "drag_and_drop",
+      "prompt": {
+        "text": "HClO₄"
+      },
+      "categories": ["Strong Acid", "Weak Acid", "Weak Base", "Strong Base"],
+      "answer": "Strong Acid"
+    },
+    {
+      "type": "drag_and_drop",
+      "prompt": {
+        "text": "HCl"
+      },
+      "categories": ["Strong Acid", "Weak Acid", "Weak Base", "Strong Base"],
+      "answer": "Strong Acid"
+    },
+    {
+      "type": "drag_and_drop",
+      "prompt": {
+        "text": "HBr"
+      },
+      "categories": ["Strong Acid", "Weak Acid", "Weak Base", "Strong Base"],
+      "answer": "Strong Acid"
+    },
+    {
+      "type": "drag_and_drop",
+      "prompt": {
+        "text": "HI"
+      },
+      "categories": ["Strong Acid", "Weak Acid", "Weak Base", "Strong Base"],
+      "answer": "Strong Acid"
+    },
+    {
+      "type": "drag_and_drop",
+      "prompt": {
+        "text": "HNO₃"
+      },
+      "categories": ["Strong Acid", "Weak Acid", "Weak Base", "Strong Base"],
+      "answer": "Strong Acid"
+    },
+    {
+      "type": "drag_and_drop",
+      "prompt": {
+        "text": "H₂SO₄"
+      },
+      "categories": ["Strong Acid", "Weak Acid", "Weak Base", "Strong Base"],
+      "answer": "Strong Acid"
+    },
+    {
+      "type": "drag_and_drop",
+      "prompt": {
+        "text": "H₂SO₃"
+      },
+      "categories": ["Strong Acid", "Weak Acid", "Weak Base", "Strong Base"],
+      "answer": "Weak Acid"
+    },
+    {
+      "type": "drag_and_drop",
+      "prompt": {
+        "text": "H₃PO₄"
+      },
+      "categories": ["Strong Acid", "Weak Acid", "Weak Base", "Strong Base"],
+      "answer": "Weak Acid"
+    },
+    {
+      "type": "drag_and_drop",
+      "prompt": {
+        "text": "HNO₂"
+      },
+      "categories": ["Strong Acid", "Weak Acid", "Weak Base", "Strong Base"],
+      "answer": "Weak Acid"
+    },
+    {
+      "type": "drag_and_drop",
+      "prompt": {
+        "text": "CH₃COOH"
+      },
+      "categories": ["Strong Acid", "Weak Acid", "Weak Base", "Strong Base"],
+      "answer": "Weak Acid"
+    },
+    {
+      "type": "drag_and_drop",
+      "prompt": {
+        "text": "HF"
+      },
+      "categories": ["Strong Acid", "Weak Acid", "Weak Base", "Strong Base"],
+      "answer": "Weak Acid"
+    },
+    {
+      "type": "drag_and_drop",
+      "prompt": {
+        "text": "NH₃"
+      },
+      "categories": ["Strong Acid", "Weak Acid", "Weak Base", "Strong Base"],
+      "answer": "Weak Base"
+    },
+    {
+      "type": "drag_and_drop",
+      "prompt": {
+        "text": "C₅H₅N"
+      },
+      "categories": ["Strong Acid", "Weak Acid", "Weak Base", "Strong Base"],
+      "answer": "Weak Base"
+    },
+    {
+      "type": "drag_and_drop",
+      "prompt": {
+        "text": "NaOH"
+      },
+      "categories": ["Strong Acid", "Weak Acid", "Weak Base", "Strong Base"],
+      "answer": "Strong Base"
+    },
+    {
+      "type": "drag_and_drop",
+      "prompt": {
+        "text": "LiOH"
+      },
+      "categories": ["Strong Acid", "Weak Acid", "Weak Base", "Strong Base"],
+      "answer": "Strong Base"
+    },
+    {
+      "type": "drag_and_drop",
+      "prompt": {
+        "text": "KOH"
+      },
+      "categories": ["Strong Acid", "Weak Acid", "Weak Base", "Strong Base"],
+      "answer": "Strong Base"
+    },
+    {
+      "type": "drag_and_drop",
+      "prompt": {
+        "text": "Ba(OH)₂"
+      },
+      "categories": ["Strong Acid", "Weak Acid", "Weak Base", "Strong Base"],
+      "answer": "Strong Base"
+    },
+    {
+      "type": "drag_and_drop",
+      "prompt": {
+        "text": "Ca(OH)₂"
+      },
+      "categories": ["Strong Acid", "Weak Acid", "Weak Base", "Strong Base"],
+      "answer": "Strong Base"
+    }
+  ]
+}

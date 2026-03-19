@@ -1,121 +1,31 @@
 {
-  "title":"Meiosis Quiz",
-  "type":"drag_and_drop",
-  "categories": [
-    "Prophase I",
-    "Metaphase I",
-    "Anaphase I",
-    "Telophase I and Cytokinesis",
-    "Prophase II",
-    "Metaphase II",
-    "Anaphase II",
-    "Telophase II and Cytokinesis"
-  ],
-
+  "title": "Meiosis Quiz",
   "questions": [
     {
-      "prompt": { "text": "Centrosome movement, spindle formation, and nuclear envelope breakdown." },
+      "type": "drag_and_drop",
+      "prompt": {
+        "text": "Centrosome movement, spindle formation, and nuclear envelope breakdown."
+      },
+      "categories": [
+        "Prophase I",
+        "Metaphase I",
+        "Anaphase I",
+        "Telophase I and Cytokinesis",
+        "Prophase II",
+        "Metaphase II",
+        "Anaphase II",
+        "Telophase II and Cytokinesis"
+      ],
       "answer": "Prophase I"
     },
 
     {
-      "prompt": { "text": "Chromosomes condense progressively." },
-      "answer": "Prophase I"
-    },
-
-    {
-      "prompt": { "text": "Homologous chromosomes pairs are aligned and chromosomal cross over occurs." },
-      "answer": "Prophase I"
-    },
-
-    {
-      "prompt": { "text": "Chiasmatas first appear." },
-      "answer": "Prophase I"
-    },
-
-    {
-      "prompt": { "text": "Microtubules from opposite poles attach to the kinetochores, one at the center of each homolog." },
-      "answer": "Prophase I"
-    },
-
-    {
-      "prompt": { "text": "Pairs of homologous chromosomes are aligned at the metaphase plate." },
-      "answer": "Metaphase I"
-    },
-
-    {
-      "prompt": { "text": "Each homologous pair is aligned at the metaphase plate independent of the other pairs." },
-      "answer": "Metaphase I"
-    },
-
-    {
-      "prompt": { "text": "Both chromatids of one homolog are attached to kinetochore of their nearest centrosomal pole." },
-      "answer": "Metaphase I"
-    },
-
-    {
-      "prompt": { "text": "Breakdown of proteins along chromatid arms allows homologs to separate." },
-      "answer": "Anaphase I"
-    },
-
-    {
-      "prompt": { "text": "Homologs move to opposite poles, guided by spindle apparatus." },
-      "answer": "Anaphase I"
-    },
-
-    {
-      "prompt": { "text": "Sister chromatids are still joined at the centromere, causing them to move as a unit." },
-      "answer": "Anaphase I"
-    },
-
-    {
-      "prompt": { "text": "At the start, each pole has a complete haploid set of duplicated chromosomes." },
-      "answer": "Telophase I and Cytokinesis"
-    },
-
-    {
-      "prompt": { "text": "Cytokinesis forms two haploid daughter cells." },
-      "answer": "Telophase I and Cytokinesis"
-    },
-
-    {
-      "prompt": { "text": "Two haploid daughter cells have formed, but no chromosomal duplication occurs." },
-      "answer": "Telophase I and Cytokinesis"
-    },
-
-    {
-      "prompt": { "text": "Spindle apparatus forms in a haploid cell." },
-      "answer": "Prophase II"
-    },
-
-    {
-      "prompt": { "text": "In the late stage, sister chromatids are moved via microtubules to the metaphase plate." },
-      "answer": "Prophase II"
-    },
-
-    {
-      "prompt": { "text": "Sister chromatids are positioned at the metaphase plate." },
-      "answer": "Metaphase II"
-    },
-
-    {
-      "prompt": { "text": "Breakdown of proteins holding sister chromatids together, allowing them to separate and move to opposite poles." },
-      "answer": "Anaphase II"
-    },
-
-    {
-      "prompt": { "text": "Each chromatid is now an independent chromosome in a haploid cell." },
-      "answer": "Anaphase II"
-    },
-
-    {
-      "prompt": { "text": "Nuclei form and chromosomes begin condensing." },
-      "answer": "Telophase II and Cytokinesis"
-    },
-
-    {
-      "prompt": { "text": "Following cytokinesis, 4 genetically distinct haploid cells have formed." },
-      "answer": "Telophase II and Cytokinesis"
-    }    
+      "type": "multiple_choice",
+      "prompt": {
+        "text": "If a homozygous dominant male (AA) crosses with a homozygous recessive female (aa), what percent chance is there that the offspring will be dominant-displaying?"
+      },
+      "options": ["0%", "25%", "50%", "100%"],
+      "answer": "100%"
+    }
   ]
 }

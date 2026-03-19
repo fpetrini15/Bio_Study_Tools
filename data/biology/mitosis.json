@@ -1,151 +1,396 @@
 {
-  "title":"Mitosis Quiz",
-  "type":"drag_and_drop",
-  "categories": [
-    "G1 Phase",
-    "Prophase",
-    "Prometaphase",
-    "Metaphase",
-    "Anaphase",
-    "Telophase"
-  ],
-
+  "title": "Mitosis Quiz",
   "questions": [
-
     {
+      "type": "drag_and_drop",
       "prompt": { "image": "images/biology/mitosis/g1phase.png" },
+      "categories": [
+        "G1 Phase",
+        "Prophase",
+        "Prometaphase",
+        "Metaphase",
+        "Anaphase",
+        "Telophase"
+      ],
       "answer": "G1 Phase"
     },
 
     {
+      "type": "drag_and_drop",
       "prompt": { "text": "Sister chromatids condense." },
+      "categories": [
+        "G1 Phase",
+        "Prophase",
+        "Prometaphase",
+        "Metaphase",
+        "Anaphase",
+        "Telophase"
+      ],
       "answer": "Prophase"
     },
 
     {
+      "type": "drag_and_drop",
       "prompt": { "text": "Nucleoli disappear." },
+      "categories": [
+        "G1 Phase",
+        "Prophase",
+        "Prometaphase",
+        "Metaphase",
+        "Anaphase",
+        "Telophase"
+      ],
       "answer": "Prophase"
     },
 
     {
+      "type": "drag_and_drop",
       "prompt": { "text": "Mitotic spindle begins to form." },
+      "categories": [
+        "G1 Phase",
+        "Prophase",
+        "Prometaphase",
+        "Metaphase",
+        "Anaphase",
+        "Telophase"
+      ],
       "answer": "Prophase"
     },
 
     {
+      "type": "drag_and_drop",
       "prompt": { "text": "Centrosomes begin moving away from each other." },
+      "categories": [
+        "G1 Phase",
+        "Prophase",
+        "Prometaphase",
+        "Metaphase",
+        "Anaphase",
+        "Telophase"
+      ],
       "answer": "Prophase"
     },
 
     {
+      "type": "drag_and_drop",
       "prompt": { "image": "images/biology/mitosis/prophase.png" },
+      "categories": [
+        "G1 Phase",
+        "Prophase",
+        "Prometaphase",
+        "Metaphase",
+        "Anaphase",
+        "Telophase"
+      ],
       "answer": "Prophase"
     },
 
     {
+      "type": "drag_and_drop",
       "prompt": { "text": "Nuclear envelope fragments." },
+      "categories": [
+        "G1 Phase",
+        "Prophase",
+        "Prometaphase",
+        "Metaphase",
+        "Anaphase",
+        "Telophase"
+      ],
       "answer": "Prometaphase"
     },
 
     {
-      "prompt": { "text": "Microtubules from centrosomes begin invading the nuclear area." },
+      "type": "drag_and_drop",
+      "prompt": {
+        "text": "Microtubules from centrosomes begin invading the nuclear area."
+      },
+      "categories": [
+        "G1 Phase",
+        "Prophase",
+        "Prometaphase",
+        "Metaphase",
+        "Anaphase",
+        "Telophase"
+      ],
       "answer": "Prometaphase"
     },
 
     {
-      "prompt": { "text": "Kinetochores have now formed at the centromere of each chromatid (2 per chromosome)." },
+      "type": "drag_and_drop",
+      "prompt": {
+        "text": "Kinetochores have now formed at the centromere of each chromatid (2 per chromosome)."
+      },
+      "categories": [
+        "G1 Phase",
+        "Prophase",
+        "Prometaphase",
+        "Metaphase",
+        "Anaphase",
+        "Telophase"
+      ],
       "answer": "Prometaphase"
     },
 
     {
-      "prompt": { "text": "Some microtubules begin to connect to the kinetochores becoming \"kinetochore microtubules\" which can move the chromosome." },
+      "type": "drag_and_drop",
+      "prompt": {
+        "text": "Some microtubules begin to connect to the kinetochores becoming \"kinetochore microtubules\" which can move the chromosome."
+      },
+      "categories": [
+        "G1 Phase",
+        "Prophase",
+        "Prometaphase",
+        "Metaphase",
+        "Anaphase",
+        "Telophase"
+      ],
       "answer": "Prometaphase"
     },
 
     {
-      "prompt": { "text": "Non-kinetochore microtubules extending from one centrosome begin interacting with non-kinetochore microtubules originating from the other centrosome, causing the cell to lengthen." },
+      "type": "drag_and_drop",
+      "prompt": {
+        "text": "Non-kinetochore microtubules extending from one centrosome begin interacting with non-kinetochore microtubules originating from the other centrosome, causing the cell to lengthen."
+      },
+      "categories": [
+        "G1 Phase",
+        "Prophase",
+        "Prometaphase",
+        "Metaphase",
+        "Anaphase",
+        "Telophase"
+      ],
       "answer": "Prometaphase"
     },
 
     {
+      "type": "drag_and_drop",
       "prompt": { "image": "images/biology/mitosis/prometaphase.png" },
+      "categories": [
+        "G1 Phase",
+        "Prophase",
+        "Prometaphase",
+        "Metaphase",
+        "Anaphase",
+        "Telophase"
+      ],
       "answer": "Prometaphase"
     },
 
     {
+      "type": "drag_and_drop",
       "prompt": { "text": "Centrosomes are now at opposite ends of the cell." },
+      "categories": [
+        "G1 Phase",
+        "Prophase",
+        "Prometaphase",
+        "Metaphase",
+        "Anaphase",
+        "Telophase"
+      ],
       "answer": "Metaphase"
     },
 
     {
-      "prompt": { "text": "The chromosomes now arrive at the \"metaphase plate\", a plate equidistant from the centrosome spindle poles." },
+      "type": "drag_and_drop",
+      "prompt": {
+        "text": "The chromosomes now arrive at the \"metaphase plate\", a plate equidistant from the centrosome spindle poles."
+      },
+      "categories": [
+        "G1 Phase",
+        "Prophase",
+        "Prometaphase",
+        "Metaphase",
+        "Anaphase",
+        "Telophase"
+      ],
       "answer": "Metaphase"
     },
 
     {
+      "type": "drag_and_drop",
       "prompt": { "image": "images/biology/mitosis/metaphase.png" },
+      "categories": [
+        "G1 Phase",
+        "Prophase",
+        "Prometaphase",
+        "Metaphase",
+        "Anaphase",
+        "Telophase"
+      ],
       "answer": "Metaphase"
     },
 
     {
+      "type": "drag_and_drop",
       "prompt": { "text": "Shortest stage of mitosis." },
+      "categories": [
+        "G1 Phase",
+        "Prophase",
+        "Prometaphase",
+        "Metaphase",
+        "Anaphase",
+        "Telophase"
+      ],
       "answer": "Anaphase"
     },
 
     {
+      "type": "drag_and_drop",
       "prompt": { "text": "Cohesion proteins are cleaved." },
+      "categories": [
+        "G1 Phase",
+        "Prophase",
+        "Prometaphase",
+        "Metaphase",
+        "Anaphase",
+        "Telophase"
+      ],
       "answer": "Anaphase"
     },
 
     {
+      "type": "drag_and_drop",
       "prompt": { "text": "Sister chromatids separate abruptly." },
+      "categories": [
+        "G1 Phase",
+        "Prophase",
+        "Prometaphase",
+        "Metaphase",
+        "Anaphase",
+        "Telophase"
+      ],
       "answer": "Anaphase"
     },
 
     {
+      "type": "drag_and_drop",
       "prompt": { "text": "Sister chromatids become independent chromosomes." },
+      "categories": [
+        "G1 Phase",
+        "Prophase",
+        "Prometaphase",
+        "Metaphase",
+        "Anaphase",
+        "Telophase"
+      ],
       "answer": "Anaphase"
     },
 
     {
-      "prompt": { "text": "Daughter chromosomes begin heading to opposite sides as kinetochore microtubules shorten." },
+      "type": "drag_and_drop",
+      "prompt": {
+        "text": "Daughter chromosomes begin heading to opposite sides as kinetochore microtubules shorten."
+      },
+      "categories": [
+        "G1 Phase",
+        "Prophase",
+        "Prometaphase",
+        "Metaphase",
+        "Anaphase",
+        "Telophase"
+      ],
       "answer": "Anaphase"
     },
 
     {
+      "type": "drag_and_drop",
       "prompt": { "image": "images/biology/mitosis/anaphase.png" },
+      "categories": [
+        "G1 Phase",
+        "Prophase",
+        "Prometaphase",
+        "Metaphase",
+        "Anaphase",
+        "Telophase"
+      ],
       "answer": "Anaphase"
     },
 
     {
+      "type": "drag_and_drop",
       "prompt": { "text": "Two daughter nuclei form." },
+      "categories": [
+        "G1 Phase",
+        "Prophase",
+        "Prometaphase",
+        "Metaphase",
+        "Anaphase",
+        "Telophase"
+      ],
       "answer": "Telophase"
     },
 
     {
-      "prompt": { "text": "Nuclear envelopes form from the fragments of parent cell's old nuclear envelope and portions of the endomembrane." },
+      "type": "drag_and_drop",
+      "prompt": {
+        "text": "Nuclear envelopes form from the fragments of parent cell's old nuclear envelope and portions of the endomembrane."
+      },
+      "categories": [
+        "G1 Phase",
+        "Prophase",
+        "Prometaphase",
+        "Metaphase",
+        "Anaphase",
+        "Telophase"
+      ],
       "answer": "Telophase"
     },
 
     {
+      "type": "drag_and_drop",
       "prompt": { "text": "Nucleoli reappear." },
+      "categories": [
+        "G1 Phase",
+        "Prophase",
+        "Prometaphase",
+        "Metaphase",
+        "Anaphase",
+        "Telophase"
+      ],
       "answer": "Telophase"
     },
 
     {
+      "type": "drag_and_drop",
       "prompt": { "text": "Chromosomes become less condensed." },
+      "categories": [
+        "G1 Phase",
+        "Prophase",
+        "Prometaphase",
+        "Metaphase",
+        "Anaphase",
+        "Telophase"
+      ],
       "answer": "Telophase"
     },
 
     {
+      "type": "drag_and_drop",
       "prompt": { "text": "Remaining spindle microtubules are depolymerized." },
+      "categories": [
+        "G1 Phase",
+        "Prophase",
+        "Prometaphase",
+        "Metaphase",
+        "Anaphase",
+        "Telophase"
+      ],
       "answer": "Telophase"
     },
 
     {
+      "type": "drag_and_drop",
       "prompt": { "image": "images/biology/mitosis/telophase.png" },
+      "categories": [
+        "G1 Phase",
+        "Prophase",
+        "Prometaphase",
+        "Metaphase",
+        "Anaphase",
+        "Telophase"
+      ],
       "answer": "Telophase"
     }
-    
   ]
 }
