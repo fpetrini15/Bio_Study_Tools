@@ -1,82 +1,64 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
 
-    <title>Chemistry</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <title>Chemistry | STEM Study Buddy</title>
+    <link rel="icon" href="images/favicons/chemistry.svg" />
     <link rel="stylesheet" href="css/styles.css" />
-
-    <link
-      id="favicon"
-      rel="icon"
-      type="image/svg+xml"
-      href="images/favicons/chemistry.svg"
-    />
   </head>
 
   <body>
     <div class="container">
-      <h1>⚗️ Chemistry</h1>
+      <header class="hero">
+        <h1>Chemistry</h1>
 
-      <p>Select a quiz topic:</p>
+        <p>Select a quiz to begin studying.</p>
+      </header>
+
+      <h2>Available Quizzes</h2>
 
       <div class="subject-grid">
+        <!-- MITOSIS -->
+
+        <div class="subject-card">
+          <div class="subject-icon">🥽</div>
+
+          <h3>Acids and Bases</h3>
+
+          <p>Test your knowledge of acids and bases</p>
+
+          <a href="quiz.html?quiz=chemistry/acids_and_bases">
+            <button class="btn btn-full">Start Quiz</button>
+          </a>
+        </div>
+
         <div class="subject-card">
           <div class="subject-icon">⚛️</div>
 
-          <h3>Atomic Structure</h3>
+          <h3>Polyatomic Ions</h3>
 
-          <p>Protons, neutrons, electrons and models</p>
+          <p>
+            Test your knowledge of the formulas and charges of the polyatomic
+            ions.
+          </p>
 
-          <button
-            class="btn btn-small"
-            onclick="startQuiz('chemistry', 'atomic-structure')"
-          >
-            Start Quiz
-          </button>
-        </div>
-
-        <div class="subject-card">
-          <div class="subject-icon">🧪</div>
-
-          <h3>Periodic Table</h3>
-
-          <p>Groups, periods, and properties</p>
-
-          <button
-            class="btn btn-small"
-            onclick="startQuiz('chemistry', 'periodic-table')"
-          >
-            Start Quiz
-          </button>
-        </div>
-
-        <div class="subject-card">
-          <div class="subject-icon">🔥</div>
-
-          <h3>Chemical Reactions</h3>
-
-          <p>Types of reactions and balancing</p>
-
-          <button
-            class="btn btn-small"
-            onclick="startQuiz('chemistry', 'reactions')"
-          >
-            Start Quiz
-          </button>
+          <a href="quiz.html?quiz=biology/polyatomic_ions">
+            <button class="btn btn-full btn-disabled">Coming Soon</button>
+          </a>
         </div>
       </div>
 
       <button class="btn btn-small" onclick="location.href = 'index.html'">
-        Back to Subjects
+        ← Back to Subjects
       </button>
-    </div>
 
-    <script>
-      function startQuiz(subject, quiz) {
-        window.location.href = `quiz.html?subject=${subject}&quiz=${quiz}`;
-      }
-    </script>
+      <footer>
+        <p>STEM Study Buddy © 2026</p>
+      </footer>
+    </div>
   </body>
 </html>
