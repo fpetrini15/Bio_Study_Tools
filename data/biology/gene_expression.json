@@ -26,6 +26,371 @@
         "Transcription uses ribosomes to read DNA sequences, while translation uses RNA polymerase to assemble amino acids."
       ],
       "answer": "Transcription is the synthesis of RNA using a DNA template, while translation is the synthesis of a polypeptide using the information in mRNA."
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": {
+        "text": "T/F: Transcription and translation can occur simultaneously in prokaryotes."
+      },
+      "options": ["True", "False"],
+      "answer": "True"
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": {
+        "text": "T/F: Transcription and translation can occur simultaneously in eukaryotes."
+      },
+      "options": ["True", "False"],
+      "answer": "False"
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": {
+        "text": "Which of the following refers to the initial RNA molecule synthesized directly from a DNA template before any RNA processing, such as splicing or polyadenylation, has occurred?"
+      },
+      "options": [
+        "Messenger RNA (mRNA)",
+        "Primary transcript",
+        "Transfer RNA (tRNA)",
+        "Exon"
+      ],
+      "answer": "Primary transcript"
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": {
+        "text": "How many consecutive nucleotides in a messenger RNA (mRNA) molecule are required to specify a single amino acid in a polypeptide chain?"
+      },
+      "options": [
+        "1 nucleotide",
+        "2 nucleotides",
+        "3 nucleotides",
+        "4 nucleotides"
+      ],
+      "answer": "3 nucleotides"
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": {
+        "text": "During transcription, which specific strand of the DNA double helix is consistently used by RNA polymerase as the pattern for synthesizing a complementary RNA molecule?"
+      },
+      "options": [
+        "Coding strand",
+        "Template strand",
+        "Lagging strand",
+        "Nontemplate strand"
+      ],
+      "answer": "Template strand"
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": {
+        "text": "What is the term for a sequence of three consecutive nucleotides on a messenger RNA (mRNA) molecule that specifies a particular amino acid during translation?"
+      },
+      "options": ["Anticodon", "Codon", "Promoter", "Intron"],
+      "answer": "Codon"
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": {
+        "text": "What is the primary role of a promoter sequence during the process of transcription?"
+      },
+      "options": [
+        "It serves as the binding site for RNA polymerase and determines where transcription begins.",
+        "It acts as a signal to terminate the synthesis of the RNA strand.",
+        "It is the sequence that is translated into the first few amino acids of a protein.",
+        "It removes introns from the primary transcript before it leaves the nucleus."
+      ],
+      "answer": "It serves as the binding site for RNA polymerase and determines where transcription begins."
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": {
+        "text": "In eukaryotic cells, what is the primary function of transcription factors during the initiation of transcription?"
+      },
+      "options": [
+        "They physically separate the DNA strands to begin RNA synthesis.",
+        "They assist the binding of RNA polymerase to the promoter and help initiate transcription.",
+        "They catalyze the addition of a 5' cap and a poly-A tail to the primary transcript.",
+        "They transport the completed messenger RNA molecule from the nucleus to the cytoplasm."
+      ],
+      "answer": "They assist the binding of RNA polymerase to the promoter and help initiate transcription."
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": {
+        "text": "In eukaryotes, which two components must assemble at the promoter to form the complete transcription initiation complex?"
+      },
+      "options": [
+        "RNA polymerase and transcription factors",
+        "DNA polymerase and primase",
+        "Ribosomes and transfer RNA",
+        "Spliceosomes and small nuclear RNA"
+      ],
+      "answer": "RNA polymerase and transcription factors"
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": {
+        "text": "T/F: A single gene can be transcribed simultaneously by several molecules of RNA polymerase."
+      },
+      "options": ["True", "False"],
+      "answer": "True"
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": {
+        "text": "Which of the following best describes the fundamental difference between pre-mRNA and mature mRNA in eukaryotic cells?"
+      },
+      "options": [
+        "Pre-mRNA is found in the cytoplasm, while mature mRNA is restricted to the nucleus.",
+        "Pre-mRNA contains both introns and exons, while mature mRNA has had the introns removed through splicing.",
+        "Pre-mRNA is synthesized by ribosomes, while mature mRNA is synthesized by RNA polymerase.",
+        "Pre-mRNA consists of a single nucleotide, while mature mRNA consists of a triplet codon."
+      ],
+      "answer": "Pre-mRNA contains both introns and exons, while mature mRNA has had the introns removed through splicing."
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": {
+        "text": "In eukaryotic cells, which two modifications are added to the ends of a pre-mRNA molecule during RNA processing to protect it and facilitate ribosome binding?"
+      },
+      "options": [
+        "A promoter at the 5' end and a terminator at the 3' end.",
+        "A 5' cap (modified guanine) and a 3' poly-A tail (chain of adenines).",
+        "Introns at the 5' end and exons at the 3' end.",
+        "A transcription factor at the 5' end and an anticodon at the 3' end."
+      ],
+      "answer": "A 5' cap (modified guanine) and a 3' poly-A tail (chain of adenines)."
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": {
+        "text": "In eukaryotic gene expression, what is the fundamental difference between introns and exons during the process of RNA splicing?"
+      },
+      "options": [
+        "Introns are the protein-coding sequences that remain in the mature mRNA, while exons are non-coding regions that are removed.",
+        "Introns are non-coding regions that are removed from the pre-mRNA, while exons are the sequences joined together to be translated into protein.",
+        "Introns are found only in the DNA template, while exons are found only in the resulting RNA transcript.",
+        "Introns determine where transcription starts, while exons determine where transcription ends."
+      ],
+      "answer": "Introns are non-coding regions that are removed from the pre-mRNA, while exons are the sequences joined together to be translated into protein."
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": {
+        "text": "What is the primary role of a spliceosome during the processing of eukaryotic pre-mRNA?"
+      },
+      "options": [
+        "It attaches the poly-A tail to the 3' end of the mRNA transcript.",
+        "It catalyzes the removal of introns and joins the remaining exons together.",
+        "It acts as a template for RNA polymerase to begin transcription.",
+        "It transports mature mRNA across the nuclear membrane to the ribosome."
+      ],
+      "answer": "It catalyzes the removal of introns and joins the remaining exons together."
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": {
+        "text": "What is the primary significance of alternative RNA splicing in eukaryotic gene expression?"
+      },
+      "options": [
+        "It allows a single gene to produce multiple different polypeptides by including different combinations of exons.",
+        "It ensures that every intron is translated into a specific functional domain of a protein.",
+        "It provides a mechanism for DNA to be replicated more quickly during the S phase of the cell cycle.",
+        "It prevents mutations by correcting errors made by RNA polymerase during transcription."
+      ],
+      "answer": "It allows a single gene to produce multiple different polypeptides by including different combinations of exons."
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": {
+        "text": "What is an anticodon, and where is it located during the process of translation?"
+      },
+      "options": [
+        "It is a three-nucleotide sequence on mRNA that codes for an amino acid.",
+        "It is a sequence on DNA that signals the end of transcription.",
+        "It is a three-nucleotide sequence on a tRNA molecule that is complementary to a specific mRNA codon.",
+        "It is a region on the ribosome where the polypeptide chain is synthesized."
+      ],
+      "answer": "It is a three-nucleotide sequence on a tRNA molecule that is complementary to a specific mRNA codon."
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": {
+        "text": "What is the primary role of transfer RNA (tRNA) during the process of translation?"
+      },
+      "options": [
+        "It carries the genetic code from the nucleus to the cytoplasm to serve as a template.",
+        "It acts as an adapter by carrying a specific amino acid and matching its anticodon to a complementary mRNA codon.",
+        "It catalyzes the formation of the peptide bond between adjacent amino acids in the polypeptide chain.",
+        "It adds a 5' cap and poly-A tail to the mRNA molecule before it leaves the nucleus."
+      ],
+      "answer": "It acts as an adapter by carrying a specific amino acid and matching its anticodon to a complementary mRNA codon."
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": {
+        "text": "What is the primary function of the enzyme aminoacyl-tRNA synthetase during the process of translation?"
+      },
+      "options": [
+        "It catalyzes the formation of peptide bonds between amino acids within the ribosome.",
+        "It accurately matches a specific amino acid to its corresponding tRNA molecule.",
+        "It unwinds the DNA double helix to allow tRNA to bind to the template strand.",
+        "It removes introns from the tRNA molecule before it enters the cytoplasm."
+      ],
+      "answer": "It accurately matches a specific amino acid to its corresponding tRNA molecule."
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": {
+        "text": "In the context of translation, what does the term 'wobble' refer to regarding the interaction between mRNA and tRNA?"
+      },
+      "options": [
+        "The physical movement of the ribosome as it shifts from one codon to the next.",
+        "The flexible base-pairing rules at the third position of a codon, allowing one tRNA to recognize multiple mRNA codons.",
+        "The tendency of RNA polymerase to make errors during the transcription of repetitive DNA sequences.",
+        "The process where a tRNA molecule briefly loses its amino acid before entering the P site."
+      ],
+      "answer": "The flexible base-pairing rules at the third position of a codon, allowing one tRNA to recognize multiple mRNA codons."
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": {
+        "text": "What is the primary role of the A site in the ribosome during the elongation phase of translation?"
+      },
+      "options": [
+        "It holds the tRNA that carries the growing polypeptide chain.",
+        "It is the entry point where the next incoming tRNA carrying an amino acid binds to the mRNA codon.",
+        "It is the site where the empty tRNA molecule is released from the ribosome.",
+        "It is the site where the 5' cap of the mRNA molecule is initially recognized."
+      ],
+      "answer": "It is the entry point where the next incoming tRNA carrying an amino acid binds to the mRNA codon."
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": {
+        "text": "Which statement best describes the significance of the P site within the ribosome?"
+      },
+      "options": [
+        "It holds the tRNA molecule that is currently attached to the growing polypeptide chain.",
+        "It serves as the exit portal for tRNA molecules that have delivered their amino acids.",
+        "It is the location where the start codon is first recognized by the small ribosomal subunit.",
+        "It is where the aminoacyl-tRNA synthetase enzyme attaches amino acids to tRNA."
+      ],
+      "answer": "It holds the tRNA molecule that is currently attached to the growing polypeptide chain."
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": {
+        "text": "What occurs at the E site of the ribosome during the process of translation?"
+      },
+      "options": [
+        "The ribosome binds to the promoter sequence to initiate transcription.",
+        "The polypeptide chain is folded into its final three-dimensional shape.",
+        "Discharged tRNA molecules that have lost their amino acids leave the ribosome.",
+        "New amino acids are chemically modified before being added to the protein."
+      ],
+      "answer": "Discharged tRNA molecules that have lost their amino acids leave the ribosome."
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": {
+        "text": "What are the three distinct stages involved in the process of translation as the ribosome builds a polypeptide chain?"
+      },
+      "options": [
+        "Transcription, processing, and translation",
+        "Initiation, elongation, and termination",
+        "Splicing, capping, and tailing",
+        "Binding, synthesis, and release"
+      ],
+      "answer": "Initiation, elongation, and termination"
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": {
+        "text": "During the elongation cycle of translation, what is the correct order of the three sub-steps required to add a single amino acid to the growing polypeptide chain?"
+      },
+      "options": [
+        "Amino acid activation, peptide bond formation, and termination",
+        "Codon recognition, peptide bond formation, and translocation",
+        "mRNA binding, tRNA charging, and ribosomal exit",
+        "Initiation complex assembly, elongation, and translocation"
+      ],
+      "answer": "Codon recognition, peptide bond formation, and translocation"
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": {
+        "text": "What is the primary distinction between free ribosomes and bound ribosomes regarding their location and the destination of the proteins they produce?"
+      },
+      "options": [
+        "Free ribosomes are located in the nucleus and make DNA, while bound ribosomes are in the cytoplasm and make RNA.",
+        "Free ribosomes are suspended in the cytosol and mostly synthesize proteins that function within the cytosol, while bound ribosomes are attached to the endoplasmic reticulum and synthesize proteins destined for secretion or membranes.",
+        "Free ribosomes produce only structural proteins, while bound ribosomes produce only enzymes for digestion.",
+        "Free ribosomes move freely between the nucleus and cytoplasm, while bound ribosomes are permanently fixed to the plasma membrane to export proteins directly out of the cell."
+      ],
+      "answer": "Free ribosomes are suspended in the cytosol and mostly synthesize proteins that function within the cytosol, while bound ribosomes are attached to the endoplasmic reticulum and synthesize proteins destined for secretion or membranes."
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": {
+        "text": "T/F: All ribosomes initially start as free ribosomes."
+      },
+      "options": ["True", "False"],
+      "answer": "True"
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": {
+        "text": "Which type of mutation involves the replacement of one nucleotide and its partner with another pair of nucleotides?"
+      },
+      "options": [
+        "Nucleotide-pair substitution",
+        "Insertion",
+        "Deletion",
+        "Frameshift mutation"
+      ],
+      "answer": "Nucleotide-pair substitution"
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": {
+        "text": "What is the result of a missense mutation in a gene sequence?"
+      },
+      "options": [
+        "The translation is terminated prematurely, resulting in a shorter polypeptide.",
+        "The codon is changed to a different codon that still codes for the same amino acid.",
+        "One amino acid is changed to a different amino acid in the resulting protein.",
+        "Every amino acid following the mutation site is changed due to a shift in the reading frame."
+      ],
+      "answer": "One amino acid is changed to a different amino acid in the resulting protein."
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": {
+        "text": "Which of the following describes a nonsense mutation?"
+      },
+      "options": [
+        "A mutation that results in the same amino acid being added to the chain.",
+        "A mutation that changes an amino acid codon into a stop codon, nearly always leading to a nonfunctional protein.",
+        "The addition of three nucleotides that does not disrupt the reading frame.",
+        "A mutation that only occurs in the non-coding intron regions of a gene."
+      ],
+      "answer": "A mutation that changes an amino acid codon into a stop codon, nearly always leading to a nonfunctional protein."
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": {
+        "text": "What occurs during a frameshift mutation?"
+      },
+      "options": [
+        "A single nucleotide is substituted, but the reading frame remains intact.",
+        "The entire ribosome detaches from the mRNA and restarts at the 5' cap.",
+        "Nucleotides are inserted or deleted in a number not divisible by three, altering the reading of all subsequent codons.",
+        "The mRNA molecule is prematurely degraded by enzymes before it can reach a ribosome."
+      ],
+      "answer": "Nucleotides are inserted or deleted in a number not divisible by three, altering the reading of all subsequent codons."
     }
   ]
 }

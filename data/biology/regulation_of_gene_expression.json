@@ -1,0 +1,302 @@
+{
+  "title": "Regulation of Gene Expression Quiz",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": {
+        "text": "In bacterial gene regulation, what is the primary function of the operator sequence located within an operon?"
+      },
+      "options": [
+        "It acts as a binding site for RNA polymerase to initiate the transcription of structural genes.",
+        "It serves as a genetic 'on-off' switch where a repressor protein can bind to physically block RNA polymerase.",
+        "It is the region that is translated into the first regulatory enzyme of a metabolic pathway.",
+        "It provides the template for the synthesis of the regulatory protein itself."
+      ],
+      "answer": "It serves as a genetic 'on-off' switch where a repressor protein can bind to physically block RNA polymerase."
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": {
+        "text": "In the context of bacterial operons, what is the specific function of a repressor protein?"
+      },
+      "options": [
+        "It binds to the promoter to increase the affinity of RNA polymerase for the DNA.",
+        "It attaches to the operator to block RNA polymerase from transcribing the genes.",
+        "It acts as an enzyme that degrades mRNA immediately after it is synthesized.",
+        "It is a signaling molecule that binds to the ribosome to stop translation."
+      ],
+      "answer": "It attaches to the operator to block RNA polymerase from transcribing the genes."
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": {
+        "text": "How does a repressible operon, such as the trp operon, typically function in a bacterial cell?"
+      },
+      "options": [
+        "It is usually 'on' but can be inhibited when a specific small molecule binds allosterically to a regulatory protein.",
+        "It is usually 'off' but can be stimulated when a specific small molecule interacts with a regulatory protein.",
+        "It requires the presence of lactose to remove a repressor from the operator site.",
+        "It only functions when the cell's internal concentration of glucose is extremely high."
+      ],
+      "answer": "It is usually 'on' but can be inhibited when a specific small molecule binds allosterically to a regulatory protein."
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": {
+        "text": "In which scenario would an inducible operon, such as the lac operon, be most likely to actively transcribe genes?"
+      },
+      "options": [
+        "When the end product of the metabolic pathway is already present in high concentrations.",
+        "When a specific inducer molecule is present to inactivate the repressor protein.",
+        "When the repressor protein is successfully bound to the operator, blocking RNA polymerase.",
+        "When the cell has no need for the enzymes encoded by that specific operon."
+      ],
+      "answer": "When a specific inducer molecule is present to inactivate the repressor protein."
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": {
+        "text": "In the regulation of a repressible operon, what is the role of a corepressor?"
+      },
+      "options": [
+        "It is a protein that binds to the promoter to help RNA polymerase attach to the DNA.",
+        "It is a small molecule that cooperates with a repressor protein to switch an operon off.",
+        "It is an enzyme that breaks down the repressor protein when the cell needs more product.",
+        "It is a DNA sequence that increases the rate of transcription by attracting activators."
+      ],
+      "answer": "It is a small molecule that cooperates with a repressor protein to switch an operon off."
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": {
+        "text": "What is the key functional difference between a repressible operon and an inducible operon?"
+      },
+      "options": [
+        "Repressible operons are usually active and are turned off by a corepressor, while inducible operons are usually inactive and are turned on by an inducer.",
+        "Repressible operons are only found in eukaryotes, while inducible operons are found only in bacteria.",
+        "Repressible operons require RNA polymerase to function, while inducible operons do not require any enzymes.",
+        "Repressible operons are turned on by high concentrations of enzymes, while inducible operons are turned off by the presence of substrate."
+      ],
+      "answer": "Repressible operons are usually active and are turned off by a corepressor, while inducible operons are usually inactive and are turned on by an inducer."
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": {
+        "text": "How do inducible and repressible operons typically correlate with the type of metabolic pathway they regulate?"
+      },
+      "options": [
+        "Inducible operons usually function in anabolic pathways, while repressible operons function in catabolic pathways.",
+        "Inducible operons usually function in catabolic pathways to break down a nutrient, while repressible operons function in anabolic pathways to synthesize essential precursors.",
+        "Both inducible and repressible operons are found exclusively in anabolic pathways to ensure constant production of proteins.",
+        "Inducible operons regulate the synthesis of enzymes for DNA replication, while repressible operons regulate the enzymes for RNA processing."
+      ],
+      "answer": "Inducible operons usually function in catabolic pathways to break down a nutrient, while repressible operons function in anabolic pathways to synthesize essential precursors."
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": {
+        "text": "In a bacterial cell that prefers glucose as its primary energy source, which small signaling molecule accumulates when glucose levels are scarce?"
+      },
+      "options": ["Lactose", "Cyclic AMP (cAMP)", "ATP", "Tryptophan"],
+      "answer": "Cyclic AMP (cAMP)"
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": {
+        "text": "When glucose is scarce and cAMP levels rise, how does the cAMP-CRP (CAP) complex influence the transcription of the lac operon?"
+      },
+      "options": [
+        "It binds to the operator to physically block RNA polymerase from transcribing the genes.",
+        "It binds to the CRP binding site near the promoter, increasing the affinity of RNA polymerase for the promoter.",
+        "It acts as an enzyme that converts lactose directly into glucose for the cell.",
+        "It binds to the repressor protein, causing it to attach more tightly to the operator."
+      ],
+      "answer": "It binds to the CRP binding site near the promoter, increasing the affinity of RNA polymerase for the promoter."
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": {
+        "text": "In the context of the lac operon, which of the following correctly distinguishes between negative and positive gene regulation?"
+      },
+      "options": [
+        "Negative control is mediated by the lac repressor blocking transcription, while positive control is mediated by the CRP-cAMP complex increasing transcription.",
+        "Negative control occurs when glucose is absent, while positive control occurs only when lactose is absent.",
+        "Negative control involves the 5' cap and poly-A tail, while positive control involves the removal of introns by the spliceosome.",
+        "Negative control refers to the breakdown of lactose, while positive control refers to the synthesis of glucose."
+      ],
+      "answer": "Negative control is mediated by the lac repressor blocking transcription, while positive control is mediated by the CRP-cAMP complex increasing transcription."
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": {
+        "text": "What is the primary reason that a muscle cell and a nerve cell in the same organism perform different functions despite having identical genomes?"
+      },
+      "options": [
+        "They contain different sets of genes that were inherited from different parent cells.",
+        "They undergo differential gene expression, where each cell type transcribes only a specific subset of its genes.",
+        "The muscle cell has lost all the genes related to nervous system function through specialized cell division.",
+        "The nerve cell uses a completely different genetic code to translate its mRNA into proteins."
+      ],
+      "answer": "They undergo differential gene expression, where each cell type transcribes only a specific subset of its genes."
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": {
+        "text": "What is the typical effect of DNA methylation on eukaryotic gene expression?"
+      },
+      "options": [
+        "It promotes the binding of RNA polymerase, increasing transcription rates.",
+        "It causes the removal of introns during RNA processing.",
+        "It involves the addition of methyl groups to certain bases, usually resulting in reduced transcription and gene silencing.",
+        "It triggers the ribosome to begin translation at a faster rate."
+      ],
+      "answer": "It involves the addition of methyl groups to certain bases, usually resulting in reduced transcription and gene silencing."
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": {
+        "text": "Which of the following best describes epigenetic inheritance?"
+      },
+      "options": [
+        "The inheritance of traits transmitted by mechanisms not involving the nucleotide sequence of the genome itself.",
+        "The permanent alteration of the DNA sequence in germ cells that is passed to offspring.",
+        "The process by which mitochondrial DNA is inherited strictly from the maternal parent.",
+        "The reshuffling of alleles that occurs during crossing over in meiosis."
+      ],
+      "answer": "The inheritance of traits transmitted by mechanisms not involving the nucleotide sequence of the genome itself."
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": {
+        "text": "What is the term for the physical process that gives an organism its shape and determines the organized distribution of its cells?"
+      },
+      "options": [
+        "Cellular differentiation",
+        "Morphogenesis",
+        "Cytoplasmic determination",
+        "Homeostasis"
+      ],
+      "answer": "Morphogenesis"
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": {
+        "text": "T/F: The cytoplasm of an unfertilized egg is not homogenous and profoundly impacts development.."
+      },
+      "options": ["True", "False"],
+      "answer": "True"
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": {
+        "text": "What is the process by which a cell becomes specialized in structure and function for a specific role within a multicellular organism?"
+      },
+      "options": [
+        "Phenotypic plasticity",
+        "Genomic totipotency",
+        "Cellular differentiation",
+        "Morphogenetic induction"
+      ],
+      "answer": "Cellular differentiation"
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": {
+        "text": "What is the term for the process in which signals from neighboring embryonic cells cause changes in the target cells, directing them toward a specific developmental pathway?"
+      },
+      "options": [
+        "Cytoplasmic determination",
+        "Induction",
+        "Transduction",
+        "Morphogenesis"
+      ],
+      "answer": "Induction"
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": {
+        "text": "Which term describes the point at which an embryonic cell is irreversibly committed to becoming a particular cell type, even if it is moved to a different location in the embryo?"
+      },
+      "options": [
+        "Differentiation",
+        "Determination",
+        "Pattern formation",
+        "Induction"
+      ],
+      "answer": "Determination"
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": {
+        "text": "In developmental biology, how does positional information relate to the broader process of pattern formation?"
+      },
+      "options": [
+        "Pattern formation is the mechanical movement of cells, while positional information is the genetic sequence used for mitosis.",
+        "Pattern formation is the development of a spatial organization of tissues and organs, while positional information consists of the molecular cues that tell a cell its location relative to the body axes.",
+        "Positional information is the final specialized state of a cell, while pattern formation is the initial stage where the sperm enters the egg.",
+        "Pattern formation refers only to the development of limbs, while positional information refers to the development of internal organs."
+      ],
+      "answer": "Pattern formation is the development of a spatial organization of tissues and organs, while positional information consists of the molecular cues that tell a cell its location relative to the body axes."
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": {
+        "text": "Which of the following best describes the relationship between proto-oncogenes and oncogenes?"
+      },
+      "options": [
+        "Proto-oncogenes are viral genes that cause cancer, while oncogenes are the normal cellular versions that repair DNA.",
+        "Proto-oncogenes are normal genes that stimulate responsible cell growth, while oncogenes are mutated versions that lead to excessive cell division.",
+        "Proto-oncogenes function as 'brakes' for the cell cycle, while oncogenes function as the 'accelerators' that initiate mitosis.",
+        "Proto-oncogenes are only present in embryonic cells, while oncogenes are developed in adult cells through epigenetic silencing."
+      ],
+      "answer": "Proto-oncogenes are normal genes that stimulate responsible cell growth, while oncogenes are mutated versions that lead to excessive cell division."
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": {
+        "text": "How does a mutation in the ras gene typically lead to the uncontrolled cell division characteristic of cancer?"
+      },
+      "options": [
+        "The mutated Ras protein becomes hyperactive and triggers the phosphorylation cascade even in the absence of a growth factor.",
+        "The Ras protein fails to bind to the cell membrane, preventing growth signals from reaching the nucleus.",
+        "The mutation causes the Ras protein to permanently inhibit the cell cycle at the G1 checkpoint.",
+        "The mutated Ras protein acts as a transcription factor that directly deletes tumor-suppressor genes."
+      ],
+      "answer": "The mutated Ras protein becomes hyperactive and triggers the phosphorylation cascade even in the absence of a growth factor."
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": {
+        "text": "Which of the following is a well-known tumor-suppressor gene that, when functioning normally, encodes a protein that inhibits the cell cycle or triggers apoptosis in response to DNA damage?"
+      },
+      "options": ["Ras", "p53", "Reverse transcriptase", "Bicoid"],
+      "answer": "p53"
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": {
+        "text": "What is the primary role of microRNAs (miRNAs) in eukaryotic gene regulation?"
+      },
+      "options": [
+        "They act as primers for DNA polymerase during the S phase of the cell cycle.",
+        "They bind to complementary sequences in mRNA molecules to either degrade them or block their translation.",
+        "They serve as the structural components of the large ribosomal subunit.",
+        "They facilitate the splicing of introns out of the primary transcript."
+      ],
+      "answer": "They bind to complementary sequences in mRNA molecules to either degrade them or block their translation."
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": {
+        "text": "While both involve small RNA molecules, how does the origin of small interfering RNAs (siRNAs) typically differ from that of microRNAs (miRNAs)?"
+      },
+      "options": [
+        "siRNAs are synthesized by ribosomes, while miRNAs are synthesized by RNA polymerase.",
+        "siRNAs usually arise from longer double-stranded RNA molecules (often from viruses), while miRNAs are processed from specific hairpins encoded by the cell's own genes.",
+        "siRNAs only function within the nucleus, while miRNAs only function within the mitochondria.",
+        "siRNAs are used to increase transcription rates, while miRNAs are used to decrease translation rates."
+      ],
+      "answer": "siRNAs usually arise from longer double-stranded RNA molecules (often from viruses), while miRNAs are processed from specific hairpins encoded by the cell's own genes."
+    }
+  ]
+}
